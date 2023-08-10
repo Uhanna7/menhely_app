@@ -1,0 +1,173 @@
+/* === AZ OLDAL FELÉPÍTÉSE === */
+
+body {
+    background-color: midnightblue;
+    font-family: Arial, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    text-align: justify;
+    background-color: aliceblue;
+    margin: 20px auto;
+    padding: 10px 20px;
+    width: 90%;
+    box-shadow: 2px 3px 5px #000;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+main img {
+    display: block;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.errors {
+    background-color: tomato;
+    width: 600px;
+    margin: 10px auto;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/* === FEJLÉC === */
+
+header {
+    padding: 40px;
+    background: url('assets/img/kezdo.jpg') center;
+}
+
+header p {
+    font-size: 50px;
+    color: aliceblue;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/* === NAVIGÁCIÓ === */
+
+nav {
+    background-color: #222;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+nav .active {
+    background-color: mediumslateblue;
+}
+
+nav li:hover:not(.active) {
+    background-color: #000;
+    transition: background-color 0.3s;
+}
+
+
+
+/* === TÁBLÁZATOK === */
+
+table {
+    background-color: #fff;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid blueviolet;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+tr:first-child {
+    background-color: blueviolet;
+    color: #fff;
+}
+
+tr:nth-child(n+2):hover {
+    background-color: lightgray;
+}
+
+
+/* URLAPOK FORMAZASA */
+.form {
+    padding: 30px;
+    border: 3px solid lightgray;
+    margin: 20px auto;
+    box-sizing: border-box;
+    width: 500px;
+}
+
+form > input, form > select {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+}
+
+.checkbox-container > * {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    font-size: 100%;
+    background-color: mediumslateblue;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 100px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: midnightblue;
+}
+
+form input[type="submit"] {
+    margin-top: 10px;
+}
+
+.fontos::after {
+    content: "*";
+    color: red;
+}
+
+/* EGYSEGES */
+.egyseges {
+    text-align: center;
+    margin: 0 auto 0 auto;
+    position: center;
+}
